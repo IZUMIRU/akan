@@ -4,7 +4,9 @@ import { StyleSheet, Text, View } from 'react-native';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Text>Akan - post a nonsense-design and share with designers and others!</Text>
+      <View style={styles.header}>
+      </View>
+      <Text>あかんアプリs</Text>
     </View>
   );
 }
@@ -16,4 +18,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
   },
+  header: {
+    backgroundColor: 'red',
+  }
 });
