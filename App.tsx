@@ -6,7 +6,7 @@ export default function App() {
 
   return (
     <View style={styles.container}>
-      <Text>This is the akan application</Text>
+      <Text>Now you can develop</Text>
       <Image
         style={styles.image}
         source={{uri: 'https://facebook.github.io/react-native/img/tiny_logo.png'}}
