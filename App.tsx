@@ -1,19 +1,16 @@
-import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { Text } from "react-native";
+import createAppContainer from "react-navigation"
+import createBottomTabNavigator from "react-navigation";
+import styles from "./assets/css/styles";
+import HomeScreen from "./src/container/Home";
+// import MatchesScreen from "./src/containers/Matches";
+// import MessagesScreen from "./src/containers/Messages";
+// import ProfileScreen from "./src/containers/Profile";
+import Icon from "./src/components/Icon";
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+    <HomeScreen />
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
