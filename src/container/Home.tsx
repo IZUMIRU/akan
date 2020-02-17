@@ -27,14 +27,14 @@ const Home = () => {
         >
           {Demo.map((item, index) => (
             <Card key={index}>
-              <CardItem
+              <CardItem 
                 image={item.image}
                 name={item.name}
                 description={item.description}
                 matches={item.match}
                 actions
-                // onPressLeft={() => this.swiper.swipeLeft()}
-                // onPressRight={() => this.swiper.swipeRight()}
+                onPressLeft={() => this.swiper.swipeLeft()}
+                onPressRight={() => this.swiper.swipeRight()}
               />
             </Card>
           ))}
