@@ -9,7 +9,7 @@ import {
   TouchableOpacity
 } from 'react-native';
 import ProfileItem from '../components/ProfileItem';
-import Icon from '../components/Icon';
+import { Icon } from 'react-native-elements';
 import Demo from '../../assets/data/demo.js';
 
 const Profile = () => {
@@ -35,13 +35,25 @@ const Profile = () => {
           <View style={styles.top}>
             <TouchableOpacity>
               <Text style={styles.topIconLeft}>
-                <Icon name="chevronLeft" />
+                <Icon
+                  raised
+                  name='heartbeat'
+                  type='font-awesome'
+                  color='#f50'
+                  onPress={() => console.log('hello')} 
+                />
               </Text>
             </TouchableOpacity>
 
             <TouchableOpacity>
               <Text style={styles.topIconRight}>
-                <Icon name="optionsV" />
+                <Icon
+                  raised
+                  name='heartbeat'
+                  type='font-awesome'
+                  color='#f50'
+                  onPress={() => console.log('hello')} 
+                />
               </Text>
             </TouchableOpacity>
           </View>
@@ -61,13 +73,25 @@ const Profile = () => {
         <View style={styles.actionsProfile}>
           <TouchableOpacity style={styles.circledButton}>
             <Text style={styles.iconButton}>
-              <Icon name="optionsH" />
+              <Icon
+                raised
+                name='heartbeat'
+                type='font-awesome'
+                color='#f50'
+                onPress={() => console.log('hello')} 
+              />
             </Text>
           </TouchableOpacity>
 
           <TouchableOpacity style={styles.roundedButton}>
             <Text style={styles.iconButton}>
-              <Icon name="chat" />
+              <Icon
+                raised
+                name='heartbeat'
+                type='font-awesome'
+                color='#f50'
+                onPress={() => console.log('hello')} 
+              />
             </Text>
             <Text style={styles.textButton}>Start chatting</Text>
           </TouchableOpacity>

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from '../../assets/css/styles';
 
 import { Text, View } from 'react-native';
-import Icon from './Icon';
+import { Icon } from 'react-native-elements';
 
 const ProfileItem = ({
   age,
@@ -18,7 +18,13 @@ const ProfileItem = ({
     <View style={styles.containerProfileItem}>
       <View style={styles.matchesProfileItem}>
         <Text style={styles.matchesTextProfileItem}>
-          <Icon name="heart" /> {matches}% Match!
+          <Icon
+            raised
+            name='heartbeat'
+            type='font-awesome'
+            color='#f50'
+            onPress={() => console.log('hello')} 
+          /> {matches}% Match!
         </Text>
       </View>
 
@@ -30,28 +36,52 @@ const ProfileItem = ({
 
       <View style={styles.info}>
         <Text style={styles.iconProfile}>
-          <Icon name="user" />
+          <Icon
+            raised
+            name='heartbeat'
+            type='font-awesome'
+            color='#f50'
+            onPress={() => console.log('hello')} 
+          />
         </Text>
         <Text style={styles.infoContent}>{info1}</Text>
       </View>
 
       <View style={styles.info}>
         <Text style={styles.iconProfile}>
-          <Icon name="circle" />
+          <Icon
+            raised
+            name='heartbeat'
+            type='font-awesome'
+            color='#f50'
+            onPress={() => console.log('hello')} 
+          />
         </Text>
         <Text style={styles.infoContent}>{info2}</Text>
       </View>
 
       <View style={styles.info}>
         <Text style={styles.iconProfile}>
-          <Icon name="hashtag" />
+          <Icon
+            raised
+            name='heartbeat'
+            type='font-awesome'
+            color='#f50'
+            onPress={() => console.log('hello')} 
+          />
         </Text>
         <Text style={styles.infoContent}>{info3}</Text>
       </View>
 
       <View style={styles.info}>
         <Text style={styles.iconProfile}>
-          <Icon name="calendar" />
+          <Icon
+            raised
+            name='heartbeat'
+            type='font-awesome'
+            color='#f50'
+            onPress={() => console.log('hello')} 
+          />
         </Text>
         <Text style={styles.infoContent}>{info4}</Text>
       </View>

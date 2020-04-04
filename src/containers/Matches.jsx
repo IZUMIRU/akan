@@ -10,7 +10,7 @@ import {
   FlatList
 } from 'react-native';
 import CardItem from '../components/CardItem';
-import Icon from '../components/Icon';
+import { Icon } from 'react-native-elements'
 import Demo from '../../assets/data/demo.js';
 
 const Matches = () => {
@@ -25,7 +25,13 @@ const Matches = () => {
             <Text style={styles.title}>Matches</Text>
             <TouchableOpacity>
               <Text style={styles.icon}>
-                <Icon name="optionsV" />
+                <Icon
+                  raised
+                  name='heartbeat'
+                  type='font-awesome'
+                  color='#f50'
+                  onPress={() => console.log('hello')} 
+                />
               </Text>
             </TouchableOpacity>
           </View>
