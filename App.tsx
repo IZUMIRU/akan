@@ -7,7 +7,7 @@ import HomeScreen from "./src/containers/Home.jsx";
 import MatchesScreen from "./src/containers/Matches.jsx";
 import MessagesScreen from "./src/containers/Messages.jsx";
 import ProfileScreen from "./src/containers/Profile.jsx";
-import Icon from "./src/components/Icon";
+import { Icon } from 'react-native-elements';
 
 const App = createBottomTabNavigator(
 	{
@@ -18,7 +18,7 @@ const App = createBottomTabNavigator(
 					const iconFocused = focused ? "#7444C0" : "#363636";
 					return (
 						<Text style={[styles.iconMenu, { color: iconFocused }]}>
-							<Icon name="explore" />
+							<Icon name='rowing' />
 						</Text>
 					);
 				}
@@ -31,7 +31,7 @@ const App = createBottomTabNavigator(
 					const iconFocused = focused ? "#7444C0" : "#363636";
 					return (
 						<Text style={[styles.iconMenu, { color: iconFocused }]}>
-							<Icon name="heart" />
+							<Icon name='rowing' />
 						</Text>
 					);
 				}
@@ -44,7 +44,7 @@ const App = createBottomTabNavigator(
 					const iconFocused = focused ? "#7444C0" : "#363636";
 					return (
 						<Text style={[styles.iconMenu, { color: iconFocused }]}>
-							<Icon name="chat" />
+							<Icon name='rowing' />
 						</Text>
 					);
 				}
@@ -57,7 +57,7 @@ const App = createBottomTabNavigator(
 					const iconFocused = focused ? "#7444C0" : "#363636";
 					return (
 						<Text style={[styles.iconMenu, { color: iconFocused }]}>
-							<Icon name="user" />
+							<Icon name='rowing' />
 						</Text>
 					);
 				}
