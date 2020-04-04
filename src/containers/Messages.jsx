@@ -16,7 +16,7 @@ import Demo from '../../assets/data/demo.js';
 const Messages = () => {
   return (
     <ImageBackground
-      source={require('../assets/images/bg.png')}
+      source={require('../../assets/images/bg.png')}
       style={styles.bg}
     >
       <View style={styles.containerMessages}>

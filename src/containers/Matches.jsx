@@ -16,7 +16,7 @@ import Demo from '../../assets/data/demo.js';
 const Matches = () => {
   return (
     <ImageBackground
-      source={require('../assets/images/bg.png')}
+      source={require('../../assets/images/bg.png')}
       style={styles.bg}
     >
       <View style={styles.containerMatches}>
@@ -33,15 +33,15 @@ const Matches = () => {
           <FlatList
             numColumns={2}
             data={Demo}
-            keyExtractor={(item, index) => index.toString()}
+            keyExtractor={(index) => index.toString()}
             renderItem={({ item }) => (
               <TouchableOpacity>
-                {/* <CardItem
+                <CardItem
                   image={item.image}
                   name={item.name}
                   status={item.status}
                   variant
-                /> */}
+                />
               </TouchableOpacity>
             )}
           />

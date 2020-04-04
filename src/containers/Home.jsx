@@ -20,6 +20,7 @@ const Home = () => {
         </View>
 
         <CardStack
+          // loopの挙動
           loop={true}
           verticalSwipe={false}
           renderNoMoreCards={() => null}
@@ -35,7 +36,7 @@ const Home = () => {
                 actions
                 onPressLeft={() => this.swiper.swipeLeft()}
                 onPressRight={() => this.swiper.swipeRight()}
-              />
+              ></CardItem>
             </Card>
           ))}
         </CardStack>

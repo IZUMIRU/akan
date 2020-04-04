@@ -1,6 +1,6 @@
 const Icon = ({ name }) => {
   const iconsList = {
-    heart: '&#xe800;',
+    heart: 'f004',
     star: '&#xe801;',
     like: '&#xe800;',
     dislike: '&#xe802;',
